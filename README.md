@@ -42,4 +42,4 @@ The Stopwatch Application should have the following features:
   
   -> Button actions should be responsive and clearly visible.
   
-  -> The application should be compatible with modern web browsers such as Google Chrome, Mozilla Firefox, and Safari.
+  -> The application should be compatible with modern web browsers such as Google Chrome, Mozilla Firefox, and Safari. 
