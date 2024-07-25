@@ -4,15 +4,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.scss" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
   <title>Stopwatch App</title>
 </head>
 
 <body>
+  
+  <h1> 
+    <i class="fa-solid fa-hourglass-start"></i>
+    Stopwatch application
+  </h1>
+  
+  <div class="appContainer">
+    <div class="numberContainer">
+      <div>
+        <span class="secondsNumber">00</span> : <span class="tensNumber">00</span>
+      </div>
+    </div>
 
-  <h1>Stopwatch application</h1>
+    <div class="buttonContainer">
+      <button class="startOrPauseTimer btn btn-primary btn-lg"> <i class="fa-solid fa-play"></i> Start / Pause </button>
+      <button class="stopTimer hidden btn btn-danger btn-lg"> <i class="fa-solid fa-stop"></i> Stop </button>
+      <button class="reset btn btn-info btn-lg"> <i class="fa-solid fa-power-off"></i> Reset </button>
+    </div>
 
-
+    <div class="timeShower">
+      <span class="alert alert-success hidden stoppedTime">  </span>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
